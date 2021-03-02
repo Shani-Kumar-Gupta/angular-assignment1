@@ -1,0 +1,39 @@
+.mainClass {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.cardBody {
+    width: 90vw;
+    height: auto;
+    background: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+    box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.para {
+    color: #07328a;
+    font-weight: 400;
+}
+
+.elementColor {
+    background-color: #07328a;
+    color: white;
+    font-weight: bold;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px){
+    .cardBody {
+        margin: 17px;
+    }
+}
+
+@media (min-width: 768px) {
+    .inputBox{
+        padding: 0 300px 20px;
+    }
+}
