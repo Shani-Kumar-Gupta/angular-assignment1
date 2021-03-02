@@ -1,0 +1,23 @@
+<div>
+  <h1 class="m-3">{{ title }}</h1>
+  <button class="btn btn-primary" (click)="togglePara()">
+    Display Details
+  </button>
+  <p class="m-3" *ngIf="isVisible">{{ para }}</p>
+  <p class="m-3">Button clicked: {{ clickCount }} times</p>
+<div class="input-group paddingPage">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Enter items to display</span>
+  </div>
+  <input class="form-control" type="text" [(ngModel)]="ele" />
+</div>
+<br/>
+<button class="btn btn-primary btn-lg" (click)="listEle(ele)">Add item</button>
+  <div class="mt-3">
+    <p *ngFor="let item of itemList; index as i">
+      <span [ngClass]="(i + 1) % 5 == 0 ? 'itemColor' : ''">
+        {{ item }}
+      </span>
+    </p>
+  </div>
+</div>
